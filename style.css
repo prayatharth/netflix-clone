@@ -1,0 +1,178 @@
+/* Ticker Screen */
+
+.Ticker_ticker__ouUx5 {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    font-family: var(--twk-everett);
+    font-weight: 300;
+    line-height: 1;
+    font-size: 6.875rem;
+    margin: .2em 0;
+    padding: .1em 0;
+    user-select: none
+}
+
+.Ticker_ticker__ouUx5 div {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: .2em;
+    vertical-align: top;
+    will-change: transform
+}
+
+:is(.Ticker_ticker__ouUx5 div)~div {
+    top: .1em
+}
+
+.Ticker_ticker__ouUx5 svg {
+    font-size: .52em;
+    width: 1em;
+    height: 1em;
+    fill: currentColor
+}
+
+@media (min-width:1024px) {
+    .Ticker_ticker__ouUx5 {
+        font-size: 16.875rem
+    }
+}
+
+
+/* HomePage Hero */
+
+.HomepageHero_block__fV2a3 .HomepageHero_ticker__PXiPG {
+    margin: auto 0 1.25rem;
+    font-size: 5.625rem;
+    mix-blend-mode: difference;
+    color: #fff;
+    pointer-events: none;
+    z-index: 10
+    marquee-speed:fast;
+}
+
+.HomepageHero_block__fV2a3 .HomepageHero_ticker__PXiPG {
+    margin: auto 0;
+    font-size: 13.75rem;
+    left: calc(100% + 5.625rem)
+}
+
+/* Cursor */
+
+.wrapper {
+    background: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: url('assets/images/custom-cursor.png'), auto;
+}
+
+
+.cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+    left: 0;
+    z-index: inherit;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width 1000ms, height 1000ms;
+}
+
+.cursor.large {
+    height: 70px;
+    width: 70px;
+}
+
+
+
+
+
+.Layout_block__n_p_7 {
+    position: relative;
+    background: #f4f4f4;
+    font-size: 1rem;
+    z-index: 2
+}
+
+.Layout_block__n_p_7.Layout_page-gray__27gqO {
+    background: #f4f4f4
+}
+
+.Layout_block__n_p_7.Layout_darkScheme__y8FAo {
+    background: #000;
+    color: #fff
+}
+
+
+
+.HomepageHero_block__fV2a3 .HomepageHero_content__bCxLj,
+.HomepageHero_block__fV2a3 .HomepageHero_media__3Y_DB {
+    flex: 0 0 50%;
+    max-width: 50%;
+    height: calc(100vh - var(--header-primary-height))
+}
+.HomepageHero_block__fV2a3 .HomepageHero_content__bCxLj {
+    padding: 0 5.625rem 1.5625rem
+}
+.HomepageHero_block__fV2a3 .HomepageHero_ticker__PXiPG {
+    margin: auto 0;
+    font-size: 13.75rem;
+    left: calc(100% + 5.625rem)
+}
+.HomepageHero_block__fV2a3 .HomepageHero_title__5hkUf {
+    font-size: 1.5rem;
+    max-width: 100%;
+    line-height: 2.1875rem
+}
+.HomepageHero_block__fV2a3 .HomepageHero_bg__BIqD1:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #151515;
+    opacity: .8;
+    pointer-events: none;
+    z-index: 2
+}
+.HomepageHero_block__fV2a3 .HomepageHero_bg__BIqD1 .react-parallax-content {
+    aspect-ratio: auto;
+    height: calc(100vh - var(--header-primary-height))
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
